@@ -1,5 +1,6 @@
 syntax = "proto3";
-option go_package = "./translation";
+package pb; 
+option go_package = "workspace/grpctasks/pb";
 
 service Translation {
     rpc Translate(TranslationInput) returns(TranslationOutput);
